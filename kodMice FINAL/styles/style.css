@@ -1,0 +1,195 @@
+*  /*ubacivanje fonta Roboto i podešavanja margina*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} 
+/*Nameštanje boje headera u narandžasto i podešavanja veličine kao i z-indexa*/
+header { 
+    background-color: orange;
+    overflow: hidden;
+    position: static;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 2.5vh 5.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+/*Podešavanje responzivnosti veličine logoa kao i njegove pozicije*/
+header .logo { 
+    display: flex;
+    justify-content: flex-start;
+    height: 10vh;
+}
+/*Podešavanje prikazivanja liste*/
+.topNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Ukidanje bullet pointa i odvajanje navigatora stranica jedan od drugog*/
+.topNav ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+/*Dizajn navigatora stranica*/
+.topNav ul li a {
+    font-size: 2vh;
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+/*Animacija za hover preko stranica i aktivnu stranicu*/
+.topNav ul li a:hover,
+.topNav ul li a.active{
+  transition: 0.5s;
+    color: orange;
+    background-color: white;
+}
+
+/*Gašenje prikazivanja burger menu-a*/
+.topNav .icon{
+  display: none;
+}
+/*Responzivnost logoa i navigatora, paljenje burger menu ispod određene širine ekrana pomoću skripte koja navigation baru daje klasu "responsive". */
+/* logo = slika ; icon = burger menu linijice ; ul = lista stranica ; ul li a = navigatori stranica */
+@media screen and (max-width: 800px) {
+  header .logo {
+    height: 7vh;
+  }
+    .topNav a{
+    display: none;
+  }
+    .topNav .icon {
+    transform: translate(-5vw);
+    display: block;
+    }
+
+    .topNav.responsive{
+      position: relative;
+    }
+  
+    .topNav.responsive .icon {
+      position: absolute;
+      left: 0px;
+      top: 0;
+    }
+    .topNav.responsive ul {
+      flex-direction: column;
+    }
+    .topNav.responsive ul li a {
+      margin-bottom: 5px;
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/*-------------------------------------------------------------------------------*/
+/*Footer boja, animacija logoa, uređivanje social media ikonica*/
+footer{
+   background-color: orange;
+   text-align: center;
+}
+#logoAnimacija{
+  margin-top: 30px;
+    position:relative;
+    animation: Rotacija 6s infinite linear;
+    width: 15vw;
+    height: 4vw;
+}
+@keyframes Rotacija{
+    from {
+      transform:   rotateX(0deg)
+    }
+    to{
+       transform:  rotateX(360deg)
+    }
+}
+.ikonice{
+    width: 5vw;
+    height: 5vw;
+}
+#follow{
+    font-size: 3vw;
+    font-weight: 800;
+}
+  /* ---------------------------------------------------------- */
+
+  /*Google maps u Kontaktima*/
+  #mapa{
+    text-align: center;
+    left: 50%;
+  }
+/*Video container*/
+  .container{
+    position: relative;
+  }
+  .container video{
+    filter: brightness(40%);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+/* ---------------------------------------------------------- */
+  .overlay h1{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    text-align: center;
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+
+  .overlay h4{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    font-size: 3vw;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  h2{
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h3{
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .highlight{
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+  }
+
+  h5{
+    font-size: 1vw;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }

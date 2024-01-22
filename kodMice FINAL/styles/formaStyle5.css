@@ -1,0 +1,62 @@
+.registracija {
+    background: linear-gradient(orange, rgba(121, 117, 117, 0.895));
+    border: 5px outset grey;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    width: 50vw;
+    
+    margin-left: 25%;
+}
+
+.polje {
+    margin: 15px;
+}
+
+.polje label {
+    display: block;
+}
+
+.polje input {
+    display: block;
+    width: 100%;
+}
+
+.btn-registruj {
+   position: absolute;
+   left: 35px;
+   background: linear-gradient(to left,orange, rgba(121, 117, 117, 0.895));
+   /* margin-left: 25%;
+    margin-right: 25%;*/
+    font-size: 120%;
+}
+.izborJela1{
+  display: block;
+  width: 500px;
+}
+.naslovForme{
+  font-weight: 900;
+  text-align: center;
+}
+select{
+    display: block;
+    width: 100%;
+}
+option{
+    font-weight: 900;
+    text-align: center;
+}
+.registracija label,#naslovForme{
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#tekst{
+    font-size: 20px;
+    text-align: center;
+    border: 2px outset orange;
+    display: block;
+}

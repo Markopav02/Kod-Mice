@@ -1,0 +1,82 @@
+/*Podesava svaki podnaslov na centar kao i boju teksta i font*/
+.podnaslov{
+    text-align: center;
+    background-color: chocolate;
+    color: antiquewhite;
+    padding: 2%;
+    font-size: 5vw;
+    font-weight: 800;
+}
+/*Podesava dimenzije i boju svakog "stavka" div-a i postavlja text unutar njega u sredinu*/
+.stavka{
+    height: 50%;
+    width: 30%;
+    background-color:peru;
+    color: rgb(230, 224, 207);
+    padding-top: 4%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+/*Procedura kada korisnik cursorom predje preko stavka elementa*/
+.stavka:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05, 1.05);
+    transition-delay: 0,45s;
+   
+}
+
+/*Podesava dimenzije i oblik slika unutar stavki*/
+.stavka img{
+    height: 75%;
+    width: 75%;
+border-radius: 15px;
+}
+/*Podesavanje teksta unutar stavki*/
+.stavka p{
+    font-size: 2.5vw;
+    font-weight: 800;
+    margin-top: 4%;
+}
+/*Pozicioniranje stavka elemanata unutar "vrstajela" div taga*/
+.vrstajela{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10%;
+    justify-content:space-evenly;
+}
+/*Podesavanje boja razlicitih podnaslova kao i promena boje kad korisnik cursorom predje preko stavki odredjene vrste*/
+#dorucak1{
+    background-color: orange;
+}
+#dorucak div.stavka:hover{
+    background-color: orange;
+}
+#corbe1{
+    background-color: maroon;
+}
+#corbe div.stavka:hover{
+    background-color: maroon;
+}
+#glavnajela div.stavka:hover{
+    background-color: chocolate;
+}
+#rostilj div.stavka:hover{
+    background-color: chocolate;
+}
+#salate1{
+    background-color: rgb(4, 170, 4);
+}
+#salate div.stavka:hover{
+    background-color: rgb(4, 170, 4);
+}
+#pice1{
+    background-color: goldenrod;
+}
+#pice div.stavka:hover{
+    background-color: goldenrod;
+}

@@ -1,0 +1,55 @@
+/*Video container*/
+.container{
+    position: relative;
+    }
+  .container video{
+    filter: brightness(40%);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    }
+
+/*Uređivanje h1 i h4 koji se nalaze preko videa odnosno koji imaju overlay klasu*/
+.overlay h1{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    text-align: center;
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+
+  .overlay h4{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    font-size: 3vw;
+    text-align: center;
+    white-space: nowrap;
+    }
+
+/*Uređivanje h2 i h3 kojima su napisani tekstovi ispod videa*/
+h2{
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h3{
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    }
+
+/*Highlight klasa uz pomoć koje se korišćenjem "span" funkcionalnosti naglašavaju određeni delovi teksta*/
+.highlight{
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+}

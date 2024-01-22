@@ -1,0 +1,30 @@
+
+.polje input:focus {
+    background-color: rgb(244, 217, 163);
+}
+
+.btn-registruj:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.17, 1.17);
+}
+
+.obavezno label::after {
+    content: " *";
+    color: red;
+}
+
+/* media query
+@media
+*/
+@media only screen and (max-width: 768px) {
+    .btn-registruj:hover{
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        
+    }
+   #btn-submit{
+    left: 7vw;
+   }
+  
+  }

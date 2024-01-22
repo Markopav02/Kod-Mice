@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasajte za jelo</title>
+    <link rel="stylesheet" href="styles/baseStyle.css">
+    <link rel="stylesheet" href="styles/izborStyle.css">
+    <link rel="stylesheet" href="styles/pseudo3.css">
+    <link rel="stylesheet" href="styles/formaStyle5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/faviconBeer.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo2.svg" alt=""></a>
+        <div class="topNav" id="myTopNav">
+        <ul>
+            <li><a href="index.html" >Početna strana</a></li>
+            <li><a href="jelovnik.html">Jelovnik</a></li>
+            <li><a href="izbor.html" class="active">Izbor specijaliteta</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </li>
+        </ul>
+    </div>
+    </header>
+    <h1>Anketa za izbor novog jela</h1>
+    <div id="tekst">Dragi naši , pred vama je jedinstvena prilika da učestvujete u izboru novog jela
+        koje će se naći na našem jelovniku ! <br>
+        Sve što treba da uradite je da popunite kratku formu i tako uzmete učešće u kreiranju 
+        novih specijaliteta u našoj kafani . <br>
+        Potrebno je da unesete vaše ime i prezime , mail adresu i , ukoliko želite , vaš broj telefona 
+        a da zatim izaberete neko od pounđenih jela .<br>
+       <span id="hvala">Hvala što ste deo naše porodice !!!</span> 
+        <br>
+
+        
+        
+    </div>
+    <br><br><br>
+    <main class="registracija">
+        <span id="naslovForme">Izaberite željeno jelo</span>
+            <form action="" class="forma">
+                <div class="polje obavezno">
+                    <label for="imeIPrezime">Ime i prezime</label>
+                    <input type="text" placeholder="npr. Petar Petrovic" required id="imeIPrezime" pattern="[A-Za-z]+ [A-Za-z]+([A-Za-z ]*)?">
+                </div>
+                
+                <div class="polje obavezno">
+                    <label for="mail">Mail adresa:</label>
+                    <input type="email" placeholder="npr. petar.petrovic@gmail.com" required id="mail">
+                </div>
+                <div class="polje">
+                    <label for="brTel">Broj telefona</label>
+                    <input type="text" placeholder="npr. 063111222" id="brTel" pattern="[0][6][0-9]{8}" >
+                </div>
+                <div class="polje obavezno">
+                    <label for="IzborJela1">Izaberite željeno jelo</label>
+                    <select name="izborJela" id="izborJela1">
+                        
+                        <option value="Pastrmka na žaru">Pastrmka na žaru</option>
+                        <option value="Punjena paprika">Punjena paprika</option>
+                        <option value="Ćufte u sosu">Ćufte u sosu</option>
+                        <option value="Musaka od krompira">Musaka od krompira</option>
+                        <option value="Paradajz čorba">Paradajz čorba</option>
+                    </select>
+                </div>
+               
+                <button type="submit" class="btn-registruj" id="btn-submit">Potvrdi izbor</button>
+            </form>
+            <br><br><br>
+            <span>
+               <a href="./jelovnik.html" > Pogledajte našu treuntnu ponudu</a>
+            </span>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    <script src="../javascript/forma.js"></script>
+    <footer>
+        <img src="img/logo2.svg" id="logoAnimacija" alt="Logo Animacija">
+        <br><br><br><div id="follow">Zapratite nas</div><br>
+         
+        <a href="https://sr-rs.facebook.com/" target="_blank"><img src="img/facebook.svg" class="ikonice" alt="facebook"></a> 
+       <a href="https://instagram.com/" target="_blank"><img src="img/instagram3.png" class="ikonice" alt="Instagram"></a> 
+       <a href="https://youtube.com/" target="_blank"><img src="img/youtube.png" class="ikonice" alt="Youtube"></a> 
+       <h5 style="text-align: left;">All copyrights reserved. Design by: Wallstreet Boys™</h5>
+    </footer>
+
+    <script src="script/javaScript.js"></script>
+    <script src="script/forma.js"></script>
+</body>
+
+</html>
